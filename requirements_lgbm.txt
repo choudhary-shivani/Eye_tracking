@@ -1,0 +1,8 @@
+pandas~=1.2.1
+numpy~=1.19.5
+lightgbm~=3.1.1
+sklearn~=0.0
+scikit-learn~=0.23.2
+torch~=1.7.1
+spacy~=2.3.5
+syllables~=0.1.0

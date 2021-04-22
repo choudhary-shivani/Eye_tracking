@@ -12,6 +12,8 @@ For CNN, there is flag that will ensure what would be the context length for the
 
 Added the modules that was used to train on the colab. 
 
+Added modules to hypertune
+
 ## LGBM
 The file Data Preparation LGBM.py provides the steps used for preparing the data and extracting features for training the model. Different combinations of features can be extracted into numpy arrays for forming various models.
 

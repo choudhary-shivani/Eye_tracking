@@ -1,3 +1,8 @@
+# This code is for optimization of ANN.
+# in this version, you can change the value of the batch size, dropout rate 
+# as per your choice. 
+
+
 from google.colab import drive
 drive.mount('/content/drive')
 
@@ -230,7 +235,7 @@ with open("optimization_ANN.txt", 'w') as f:
     f.write("Started Syllables based feature - Avrage pooling  \n\n")            
 trials = Trials()
 space = {
-    'dropout': hp.choice('dropout', [0, 0.1, 0.2, 0.3, 0.4, 0.5]),
+    'dropout': hp.choice('dropout', [0, 0.1, 0.2, 0.3, 0.4]),
     'lr': hp.choice('lr', [1e-4, 1e-5, 1e-3]),
     'batch' : hp.choice('batch', [16, 32, 64])
 }

@@ -296,15 +296,13 @@ final_df.astype({'syllables': 'float64'})
 final_df.dropna(inplace=True)
 final_df.reset_index(inplace=True)
 final_df.drop(['index'], axis=1, inplace=True)
+token_length = []
+
+for i in df['word'].to_list():
+    token_length.append(len(str(i)))
+final_df['word_len'] = token_length
 final_df.to_csv("Full_Feature_Space.csv")
 
-# We can drop remaining columns and keep only syllables and bert columns to get features with only syllables
-syllables_col = ['syllables', *bert_col, *target_cols]
-final_df.to_csv("Syllables_Feature_Space.csv")
+# For this dataframe we can select subsets as desired for different combinations of features
 
-# Syllables features
-syllables_bert_features = final_df[['syllables', *bert_col]].to_numpy()
-np.save('syllables_bert_features.npy', syllables_bert_features)
-syllables_bert_target = final_df[target_cols].to_numpy()
-np.save('syllables_bert_target.npy', syllables_bert_target)
 

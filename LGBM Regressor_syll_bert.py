@@ -2,12 +2,14 @@ import pandas as pd
 import numpy as np
 from lightgbm import LGBMRegressor
 from sklearn.metrics import mean_absolute_error
-from sklearn.model_selection import GridSearchCV
 
 X_train = np.load('syllables_bert_features_train.npy')
 y_train = np.load('syllables_bert_target_train.npy')
 X_test = np.load('syllables_bert_features_test.npy')
 y_test = np.load('syllables_bert_target_test.npy')
+
+X_test.astype('float64')
+X_train.astype('float64')
 
 # After trying various runs of grid search the following set of parameter grid values gave good results
 lgbm_models = []

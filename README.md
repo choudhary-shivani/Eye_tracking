@@ -10,9 +10,17 @@ Files CNN.py, traintf.py provides the details of the DL model I used to extract 
 
 For CNN, there is flag that will ensure what would be the context length for the processing.
 
-## LGBM
-The file Data Preparation LGBM.py provides the steps used for preparing the data and extracting features for training the model.
-
-The file LGBM Regressor.py provides the details of the models finally applied to the data
-
 Added the modules that was used to train on the colab. 
+
+## LGBM
+The file Data Preparation LGBM.py provides the steps used for preparing the data and extracting features for training the model. Different combinations of features can be extracted into numpy arrays for forming various models.
+
+The file LGBM Regressor_syll_bert.py provides the details of the model applied to the feature space consisting of syllables and BERT embeddings.
+
+The file LGBM Regressor_syll_wid_bert.py provides the details of the model applied to the feature space consisting of syllables, word_id and BERT embeddings.
+
+The file LGBM Regressor_syll_wid_wlen_bert.py provides the details of the model applied to the feature space consisting of syllables, word_id, word_length and BERT embeddings.
+
+The file LGBM Regressor_wid_wlen.py provides the details of the model applied to the feature space consisting of word_id, word_length, and BERT embeddings.
+
+

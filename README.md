@@ -21,6 +21,8 @@ The file LGBM Regressor_syll_wid_bert.py provides the details of the model appli
 
 The file LGBM Regressor_syll_wid_wlen_bert.py provides the details of the model applied to the feature space consisting of syllables, word_id, word_length and BERT embeddings.
 
+The file LGBM Regressor_syll_wlen_bert.py provides the details of the model applied to the feature space consisting of syllables, word_length and BERT embeddings.
+
 The file LGBM Regressor_wid_wlen.py provides the details of the model applied to the feature space consisting of word_id, word_length, and BERT embeddings.
 
 

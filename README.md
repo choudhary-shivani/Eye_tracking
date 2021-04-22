@@ -15,8 +15,8 @@ Added the modules that was used to train on the colab.
 Added modules to hypertune
 
 BASE CNN model : CNN_colab.py
-Hypertunning model: Optimize.py
-Annopti.py
+Hypertunning model: Optimize.py for optimization of CNN model,
+Annopti.py for optimizaton of ANN.
 
 ## LGBM
 The file Data Preparation LGBM.py provides the steps used for preparing the data and extracting features for training the model. Different combinations of features can be extracted into numpy arrays for forming various models.

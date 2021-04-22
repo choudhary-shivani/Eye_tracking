@@ -25,4 +25,5 @@ The file LGBM Regressor_syll_wlen_bert.py provides the details of the model appl
 
 The file LGBM Regressor_wid_wlen.py provides the details of the model applied to the feature space consisting of word_id, word_length, and BERT embeddings.
 
+LGBM regressors were trained on google colaboratory
 
